@@ -1,0 +1,43 @@
+:root {
+  --cor-de-fundo: #f5f5f5;
+  --cor-azul: #1079b0;
+  --cor-azul-claro: #eaf2fd;
+}
+
+section.academic {
+  background-color: var(--cor-azul-claro);
+  margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.academic__courses {
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  section.academic {
+    width: 100vw;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+  .academic__title {
+    font-size: 1.2rem;
+  }
+
+  .academic__courses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academic__courses__list {
+    padding-left: 0;
+  }
+}

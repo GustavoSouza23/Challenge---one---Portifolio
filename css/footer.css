@@ -1,0 +1,35 @@
+:root {
+  --cor-de-fundo: #f5f5f5;
+  --cor-azul: #1079b0;
+  --cor-azul-escuro: #063970;
+}
+
+.footer {
+  width: 100vw;
+  background: var(--cor-azul);
+}
+
+.footer__rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--cor-azul);
+  color: var(--cor-de-fundo);
+  font-size: 1.5rem;
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  /*Footer*/
+  .footer__rodape {
+    font-size: 1.2rem;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+  /*Footer*/
+  .footer__rodape {
+    font-size: 0.8rem;
+  }
+}
